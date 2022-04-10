@@ -744,8 +744,33 @@ transition: color var(--animation);
     transition: background-color var(--animation);
   }
 
+/*footer-mailing*/
+
+.footer-mailing{
+  margin-left: 93px;
+}
+
+.footer-label{
+  margin-right: 12px;
+
+}
+
+.footer-input{
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-button{
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+
+  font-family: var(--main-font)
 
 
 
-
-  
+}
