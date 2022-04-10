@@ -766,6 +766,7 @@ transition: color var(--animation);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: var(--primery-white-color);
 }
 
 .footer-mailing input::placeholder{
