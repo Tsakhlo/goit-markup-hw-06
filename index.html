@@ -57,7 +57,8 @@
             <div class="modal">
               <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
               <form class="modal-form">
-                      <label for="name-input">Имя
+                      <label class="form-field" for="name-input">
+                          <span class="label-text">Имя</span>
                       <input 
                       type="text" 
                       class="form-input" 
@@ -68,7 +69,8 @@
                       </svg>
                     </label>
                   
-                    <label for="phone-input">Телефон
+                    <label class="form-field" for="phone-input">
+                        <span class="label-text">Телефон</span>
                     <input 
                     type="tel" 
                     class="form-input" 
@@ -80,7 +82,8 @@
                     </svg>
                     </label>
                 
-                    <label for="email-input">Почта
+                    <label class="form-field" for="email-input">
+                        <span class="label-text">Почта</span>
                     <input 
                     type="email" 
                     class="form-input" 
@@ -91,8 +94,10 @@
                     </svg>
                     </label>
                 
-                
-                    <label for="comment-input">Коментарий
+                    <div class="form-field last">
+                    <label class="field-comment" for="comment-input">
+                        <span class="label-text">Коментарий </span>
+                    </label>
                     <textarea 
                     name="enter-comment" 
                     id="comment-input" 
@@ -100,20 +105,17 @@
                     placeholder="Введите текст">
                     </textarea>
 
-                    </label>
+                   
+                    </div>
 
-                <label for="mailing-check">
+                    <label for="mailing-check">
                     <input 
                     type="checkbox" 
                     id="mailing-check" 
                     class="modal-check">
-                    <span class="modal-checkbox">
-                            <svg width="16" height="15">
-                                <use href="./images/icons.svg#icon-check"></use>
-                            </svg>
-                    </span>      
-                        Соглашаюсь с рассылкой и принимаю 
-                        <a href="">Условия договора</a> 
+                   
+                    <span class="label-text">Соглашаюсь с рассылкой и принимаю</span> 
+                    <a href="">Условия договора</a> 
                     </label>
                    
                 
@@ -465,7 +467,7 @@
 <p class = "footer-icons-title">Подпишитесь на рассылку</p>
 <form class="mailing-container" >
     <label for = "mailing-email" class = "footer-icons-title">
-         <input type="email" name = "mailing-mail" id="mailing-email" autocomplete="email"  placeholder="E-mail">
+         <input type="email" name = "mailing-mail" id="mailing-email" autocomplete="email"  placeholder="E-mail" required>
     </label>
         <button type = "submit" class = "mailing-submit-button">
             Подписаться
