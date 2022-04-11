@@ -55,36 +55,72 @@
         <button data-modal-open class="hero-button" type="button"> Заказать услугу </button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button data-modal-close class="close">&#10005;
-              </button>
               <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-              <form action="" name="modal-form">
-                  <div class="input-container">
-                      <input type="text" class="form-input" id="name-input" name="enter-name">
-                      <label for="name-input">Имя</label>
-                      <svg width="18" heigh="18">
+              <form class="modal-form">
+                      <label for="name-input">Имя
+                      <input 
+                      type="text" 
+                      class="form-input" 
+                      id="name-input"
+                      name="enter-name">
+                        <svg class="modal-icon" width="18" height="18">
                           <use href="./images/icons.svg#icon-person"></use>
                       </svg>
-                  </div>
-                  <div class="input-container">
-                    <input type="tel" class="form-input" id="phone-input" name="enter-tel">
-                    <label for="phone-input">Телефон</label>
-                    <svg width="18" heigh="18">
+                    </label>
+                  
+                    <label for="phone-input">Телефон
+                    <input 
+                    type="tel" 
+                    class="form-input" 
+                    id="phone-input" 
+                    name="enter-tel">
+                    
+                    <svg class="modal-icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
-                </div>
-                <div class="input-container">
-                    <input type="email" class="form-input" id="email-input" name="enter-email">
-                    <label for="email-input">Почта</label>
-                    <svg width="18" heigh="18">
+                    </label>
+                
+                    <label for="email-input">Почта
+                    <input 
+                    type="email" 
+                    class="form-input" 
+                    id="email-input"
+                    name="enter-email">
+                    <svg class="modal-icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>
-                </div>
-                <div class="input-container comment">
-                    <textarea name="enter-comment" id="comment-input" cols="30" placeholder="Введите текст"></textarea>
-                    <label for="comment-input">Коментарий</label>
-                </div>
+                    </label>
+                
+                
+                    <label for="comment-input">Коментарий
+                    <textarea 
+                    name="enter-comment" 
+                    id="comment-input" 
+                    cols="30"
+                    placeholder="Введите текст">
+                    </textarea>
+
+                    </label>
+
+                <label for="mailing-check">
+                    <input 
+                    type="checkbox" 
+                    id="mailing-check" 
+                    class="modal-check">
+                    <span class="modal-checkbox">
+                            <svg width="16" height="15">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                    </span>      
+                        Соглашаюсь с рассылкой и принимаю 
+                        <a href="">Условия договора</a> 
+                    </label>
+                   
+                
+              <button type="submit" class="form-button-submit">Отправить</button>
               </form>
+              <button data-modal-close class="close">&#10005;
+              </button>
         </div>
         </div>
         </div>
@@ -425,11 +461,12 @@
         </li>
     </ul>
 </div>
-
-<form action="" name = "mailing" class = "footer-mailing">
-    <label for = "mailing-email" class = "footer-icons-title">Подпишитесь на рассылку</label>
-    <div class = "mailing-container">
-        <input type="email" name = "mailing-email"  placeholder="E-mail">
+<div class="footer-mailing">
+<p class = "footer-icons-title">Подпишитесь на рассылку</p>
+<form class="mailing-container" >
+    <label for = "mailing-email" class = "footer-icons-title">
+         <input type="email" name = "mailing-mail" id="mailing-email" autocomplete="email"  placeholder="E-mail">
+    </label>
         <button type = "submit" class = "mailing-submit-button">
             Подписаться
             <span class="footer-mailing-icon">
@@ -438,8 +475,8 @@
                 </svg>
             </span>
         </button>
-    </div>
 </form>
+</div>
 </div> 
 </footer>
 <script src="./js/modal.js"></script>
