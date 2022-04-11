@@ -242,8 +242,8 @@ margin-right: auto;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.2);
   
     transition: var(--animation);
@@ -615,7 +615,7 @@ box-shadow: 1px 4px 6px  rgba(0, 0, 0, 0.16),
     transform: translateY(100%);
     transition: transform var(--animation);
   }
-  .overlay{ 
+.overlay{ 
   top: 0;
   left: 0;
   position: absolute;
@@ -627,7 +627,7 @@ box-shadow: 1px 4px 6px  rgba(0, 0, 0, 0.16),
   opacity: 0;
   transform: translateY(100%);
   transition: var(--animation);
-  }
+}
 
 
 .overlay-text{
@@ -747,7 +747,7 @@ transition: color var(--animation);
 /*footer-mailing*/
 
 .footer-mailing{
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .mailing-container{
