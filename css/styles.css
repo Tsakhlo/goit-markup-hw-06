@@ -325,7 +325,9 @@ margin-right: auto;
   .form-input:hover,
   .form-input:focus,
   .field-textarea:hover,
-  .field-textarea:focus{
+  .field-textarea:focus,
+  .form-input:focus .modal-icon,
+  .footer-mail-link:hover .modal-icon  {
     border-color: var(--accent-color);
     fill: var(--accent-color);
   }
@@ -337,7 +339,8 @@ margin-right: auto;
       fill: rgba(33, 33, 33, 1);
       transition: fill var(--animation);
     }
-    
+
+  
   .label-text {
       margin-bottom: 4px;
       text-align: left;
