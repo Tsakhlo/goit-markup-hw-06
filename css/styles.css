@@ -328,8 +328,8 @@ margin-right: auto;
   .field-textarea:focus{
     border-color: var(--accent-color);
   }
-  .form-input:focus .modal-icon,
-  .footer-mail-link:hover .modal-icon{
+  .form-input:focus ~ .modal-icon,
+  .form-input:hover ~ .modal-icon{
     fill: var(--accent-color);
     color: var(--accent-color);
   }
