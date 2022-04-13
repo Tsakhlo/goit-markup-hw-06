@@ -361,7 +361,7 @@ margin-right: auto;
       margin-right: 8px;
       width: 16px;
       height: 15px;
-      border-radius: 3px;
+      border-radius: 2px;
       border: 2px solid var(--primery-title-color);
   }
     .modal-check{
@@ -372,11 +372,13 @@ margin-right: auto;
 
 
     .modal-check-icon{
-      position: absolute;
-     fill:var(--primery-team-color);
+     position: absolute;
+     fill:var(--primery-white-color);
      top: 0;
      left: 0;
-     opacity: 0;
+     width:11px;
+     height: 8px;
+   
     }
 
     .modal-check:checked + .check-icon{
