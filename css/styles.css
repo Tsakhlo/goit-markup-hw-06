@@ -327,7 +327,7 @@ margin-right: auto;
   .field-textarea:hover,
   .field-textarea:focus{
     border-color: var(--accent-color);
-    fill: currentColor;
+    fill: var(--accent-color);
   }
 
   .modal-icon{
