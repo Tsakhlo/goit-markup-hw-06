@@ -359,6 +359,7 @@ margin-right: auto;
   .form-checkbox{
       display: flex;
       align-items: center;
+      justify-content: center;
   }
   .check-icon{
       position: relative;
